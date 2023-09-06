@@ -1,4 +1,23 @@
+:root{
+  --icones: #333;
+  --size:200px;
+  --bgcolor:white;
 
+}
+.copyright i{
+color: var(--icones);
+background-color: var(--bgcolor);
+font-size: 18px;
+display: inline-block;
+line-height: 1;
+padding: 10px 0;
+border-radius: 20%;
+text-align: center;
+width: 30px;
+height: 30px;
+transition: 0.3s;
+margin-right: 4px;
+}
 body {
   font-family: "Open Sans", sans-serif;
   color: #8f8c8c;
@@ -991,7 +1010,7 @@ section {
 
 .contact .php-email-form input,
 .contact .php-email-form textarea {
-  border-radius: 0;
+  border-radius: 20px;
   box-shadow: none;
   font-size: 14px;
 }
@@ -1010,7 +1029,7 @@ section {
   padding: 10px 24px;
   color: #fff;
   transition: 0.4s;
-  border-radius: 4px;
+ 
 }
 
 .contact .php-email-form button[type=submit]:hover {
@@ -1080,7 +1099,7 @@ section {
 #footer {
   padding: 15px;
   color: #f4f6fd;
-  font-size: 14px;
+  font-size: 10px;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -1102,8 +1121,9 @@ section {
 
 @media (max-width: 1199px) {
   #footer {
-    position: static;
     width: auto;
-    padding-right: 20px 15px;
+    height: auto;
+    background-color: #040b14;
+    color: white;
   }
 }
