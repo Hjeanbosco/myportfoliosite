@@ -1099,12 +1099,13 @@ section {
 #footer {
   padding: 15px;
   color: #f4f6fd;
-  font-size: 10px;
+  font-size: 14px;
   position: fixed;
   left: 0;
   bottom: 0;
-  margin-left: 30%;
+  width: 300px;
   z-index: 9999;
+  background: #040b14;
 }
 
 #footer .copyright {
@@ -1116,4 +1117,11 @@ section {
   text-align: center;
   font-size: 13px;
   color: #eaebf0;
+}
+@media (max-width: 1199px) {
+  #footer {
+    position: static;
+    width: auto;
+    padding-right: 20px 15px;
+  }
 }
