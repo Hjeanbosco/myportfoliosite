@@ -2,7 +2,18 @@
   --icones: #333;
   --size:200px;
   --bgcolor:white;
+  --downbtn:#149DDD;
 
+}
+#downloadButton{
+  width:40%;
+  margin: 0px 50px;
+  height: 60px;
+  padding: 10px;
+  font-size: 20px;
+  color: var(--bgcolor);
+  border-radius: 50px;
+  background-color: var(--downbtn);
 }
 .copyright i{
 color: var(--icones);
