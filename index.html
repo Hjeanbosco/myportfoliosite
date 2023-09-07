@@ -68,7 +68,7 @@
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <h1 style="color: white;">Welcome.</h1>
     <div class="hero-container" data-aos="fade-in">
-      <h1>I'm <span class="typed" data-typed-items="Designer., Developer., Photographer.,Freelancer."></span></h1>
+      <h1>I'm <span class="typed" data-typed-items="Designer., Developer., Photographer"></span></h1>
     </div>
     <p>Based in Kigali-Rwanda.</p>
     <div class="center-button">
@@ -123,8 +123,23 @@
                 </ul>
               </div>
              </div><br><br>
-            <p> <button type="button" id="downloadButton">Download Cv &nbsp;&nbsp;&nbsp;<i class="bi bi-download"></i></button>
-             
+             <button type="button" id="downloadButton">Download Cv &nbsp; &nbsp; <i class="bi bi-download"></i></button>
+             <script>
+              // JavaScript function to handle the button click event
+              document.getElementById('downloadButton').addEventListener('click', function () {
+                  // Define the PDF file URL
+                  var pdfUrl = '../myportfoliosite/assets/cv/BoscoCv.pdf'; // Change this to the actual URL of your PDF
+      
+                  // Create a temporary anchor element to trigger the download
+                  var a = document.createElement('a');
+                  a.href = pdfUrl;
+                  a.target = '_blank';
+                  a.download = 'BoscoCv.pdf'; // Rename the downloaded file if needed
+                  document.body.appendChild(a);
+                  a.click();
+                  document.body.removeChild(a);
+              });
+          </script>
             </p>
           </div>
         </div>
@@ -297,27 +312,7 @@
                 ,Estern provice In Rwanda.
               </p>
             </div>
-
-            <button type="button" id="downloadButton">Download Cv &nbsp;&nbsp;&nbsp;<i class="bi bi-download"></i></button>
-           
-            <script>
-              // JavaScript function to trigger the download when the page loads
-              window.addEventListener('load', function () {
-                  // Define the GitHub raw file URL of the PDF document
-                  var githubUrl = 'https://github.com/Hjeanbosco/myportfoliosite/tree/main/assets/cv/BoscoCv.pdf';
-                  // Replace USERNAME, REPO, BRANCH, and PATH/TO/FILE.pdf with your GitHub repository information.
-      
-                  // Create a temporary anchor element to trigger the download
-                  var a = document.createElement('a');
-                  a.href = githubUrl;
-                  a.target = '_blank';
-                  a.download = 'document.pdf'; // Rename the downloaded file if needed
-                  document.body.appendChild(a);
-                  a.click();
-                  document.body.removeChild(a);
-              });
-          </script>
-    </div>
+          </div>
           
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <h3 class="resume-title">Experience</h3>
