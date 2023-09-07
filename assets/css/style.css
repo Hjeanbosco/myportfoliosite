@@ -1103,9 +1103,7 @@ section {
   position: fixed;
   left: 0;
   bottom: 0;
-  width: 300px;
   z-index: 9999;
-  background: #040b14;
 }
 
 #footer .copyright {
@@ -1117,13 +1115,4 @@ section {
   text-align: center;
   font-size: 13px;
   color: #eaebf0;
-}
-
-@media (max-width: 1199px) {
-  #footer {
-    width: auto;
-    height: auto;
-    background-color: #040b14;
-    color: white;
-  }
 }
