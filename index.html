@@ -123,18 +123,18 @@
                 </ul>
               </div>
              </div><br><br>
-             <button type="button" id="downloadButton">Download CV &nbsp; &nbsp; <i class="bi bi-download"></i></button>
+             <button type="button" id="downloadButton">Download CV &nbsp; <i class="bi bi-download"></i></button>
 
              <script>
                  // JavaScript function to handle the button click event
                  document.getElementById('downloadButton').addEventListener('click', function () {
                      // Define the direct link to the PDF file on GitHub
-                     var pdfUrl = 'https://github.com/Hjeanbosco/myportfoliosite/raw/main/assets/cv/BoscoCv.pdf'; // Use the "raw" URL
+                     var pdfUrl = 'https://github.com/Hjeanbosco/myportfoliosite/raw/main/assets/cv/TechJeanBoscoHCv.pdf'; // Use the "raw" URL
                      
                      // Create a temporary anchor element to trigger the download
                      var a = document.createElement('a');
                      a.href = pdfUrl;
-                     a.download = 'BoscoCv.pdf'; // Rename the downloaded file if needed
+                     a.download = 'TechJeanBoscoHCv.pdf'; // Rename the downloaded file if needed
                      document.body.appendChild(a);
                      a.click();
                      document.body.removeChild(a);
