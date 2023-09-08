@@ -6,11 +6,11 @@
 
 }
 #downloadButton{
-  width:55%;
+  width:60%;
   margin: 0px 50px;
   height: 50px;
-  padding: 10px;
-  font-size: 20px;
+  padding: 5px;
+  font-size: 15px;
   color: var(--bgcolor);
   border-radius: 50px;
   background-color: var(--downbtn);
