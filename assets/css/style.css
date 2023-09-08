@@ -5,6 +5,15 @@
   --downbtn:#149DDD;
 
 }
+.center-button{
+  position: relative;
+  z-index: 2;
+}
+.hed1,p{
+  position: relative;
+  z-index: 2;
+  font-family:"Raleway", sans-serif;
+}
 #downloadButton{
   width:60%;
   margin: 0px 50px;
@@ -15,6 +24,23 @@
   border-radius: 50px;
   background-color: var(--downbtn);
   border: none;
+}
+.custom-button {
+  width: 300px;
+  height: 60px;
+  border: 4px solid #149DDD; /* Green border */
+  background-color:transparent;
+  cursor: pointer;
+  font-size: 25px;
+  color:#149DDD;
+  border-radius: 50px; 
+  font-family:"Raleway", sans-serif;
+ 
+}
+.custom-button:hover {
+  background:#149DDD;
+  color: var(--bgcolor);
+ 
 }
 .copyright i{
 color: var(--icones);
@@ -54,15 +80,6 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
-.custom-button {
-  width: 200px;
-  height: 60px;
-  border: 4px solid #20C997; /* Green border */
-  background-color:transparent;
-  color: #20C997;
-  border-radius: 50px; /* Text color, you can change this */
- 
-}
 
 /*--------------------------------------------------------------
 # Back to top button
