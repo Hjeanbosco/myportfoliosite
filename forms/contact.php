@@ -1,25 +1,26 @@
 <?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $receiving_email_address = 'hatejeanbosco2@gmail.com'; // Replace with your email address
+    $from_name = $_POST['name'];
+    $from_email = $_POST['email'];
+    $subject = $_POST['subject'];
+    $message = $_POST['message'];
 
-  $receiving_email_address = 'hatejeanbosco2@.com';
+    // Basic validation (you should implement more robust validation)
+    if (empty($from_name) || empty($from_email) || empty($message)) {
+        echo "Please fill in all required fields.";
+        exit;
+    }
 
-  if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
-    include( $php_email_form );
-  } else {
-    die( 'Unable to load the "PHP Email Form" Library!');
-  }
+    $headers = "From: $from_name <$from_email>";
+    $sent = mail($receiving_email_address, $subject, $message, $headers);
 
-  $contact = new PHP_Email_Form;
-  $contact->ajax = true;
-  
-  $contact->to = $receiving_email_address;
-  $contact->from_name = $_POST['name'];
-  $contact->from_email = $_POST['email'];
-  $contact->subject = $_POST['subject'];
-
- 
-  $contact->add_message( $_POST['name'], 'From');
-  $contact->add_message( $_POST['email'], 'Email');
-  $contact->add_message( $_POST['message'], 'Message', 10);
-
-  echo $contact->send();
+    if ($sent) {
+        echo "Email sent successfully!";
+    } else {
+        echo "Email sending failed.";
+    }
+} else {
+    echo "Form not submitted.";
+}
 ?>

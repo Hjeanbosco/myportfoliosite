@@ -447,9 +447,9 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/WebApp/web-3.jpeg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/WebApp/web-3.jpg" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/WebApp/web-3.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="web-1"><i class="bx bx-plus"></i></a>
+                <a href="assets/img/portfolio/WebApp/web-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="web-1"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -637,13 +637,13 @@
               <div class="address">
                 <i class="bi bi-geo-alt"></i>
                 <h4>Location:</h4>
-                <p>Nyanza-Kicukiro-Kigali-Rwanda</p>
+                <p>Nyanza-Kicukiro-Kigali-Rwanda</pz>
               </div>
 
               <div class="email">
                 <i class="bi bi-envelope"></i>
                 <h4>Email:</h4>
-                <p>hatejeanbosco2@.com</p>
+                <p>hatejeanbosco2@gmail.com</p>
               </div>
 
               <div class="phone">
@@ -658,35 +658,34 @@
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" required>
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" required>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" required>
-              </div>
-              <div class="form-group">
-                <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+            
+            <form onsubmit="emailSend(); reset(); return false;" role="form" class="php-email-form">
+                <div class="row">
+                    <div class="form-group col-md-6">
+                    <label for="name">Your Name</label>
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Ex: ARIHO Jesus" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="name">Phone Number</label>
+                        <input type="text" class="form-control" name="phone" id="phone"placeholder="Ex:+250 785 323 931" required>
+                       </div>
+                  </div>
+                  <div class="form-group">
+
+                      <label for="name">Your Email</label>
+                      <input type="email" class="form-control" name="email" id="email"placeholder="Ex: jb@gmail.com" required>  
+                   </div>
+                  <div class="form-group">
+                    <label for="name">Message</label>
+                    <textarea class="form-control" name="messages" rows="10" type="text" placeholder="Ex: Tell Us About You Want" required></textarea>
+                  </div>
+              <div class="text-center"><button type="submit" name="submit">Send Message</button></div>
             </form>
           </div>
 
-
+          <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+          <script src="https://smtpjs.com/v3/smtp.js"></script>
+          <script src="Contact form to email.js"></script>
         </div>
     </section><!-- End Contact Section -->
 
@@ -705,7 +704,6 @@
   </footer><!-- End  Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
