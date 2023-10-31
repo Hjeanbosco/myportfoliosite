@@ -658,18 +658,20 @@
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            
+        
             <form onsubmit="emailSend(); reset(); return false;" role="form" class="php-email-form">
-                <div class="row">
-                    <div class="form-group col-md-6">
+                <!-- <center><h1>Get In Touch</h1></center> -->
+                <!-- <div class="row"> -->
+                    <div class="form-group">
                     <label for="name">Your Name</label>
                     <input type="text" name="name" class="form-control" id="name" placeholder="Ex: ARIHO Jesus" required>
                     </div>
-                    <div class="form-group col-md-6">
+                    <!-- col-md-6 -->
+                    <div class="form-group"> 
                         <label for="name">Phone Number</label>
                         <input type="text" class="form-control" name="phone" id="phone"placeholder="Ex:+250 785 323 931" required>
                        </div>
-                  </div>
+                  <!-- </div> -->
                   <div class="form-group">
 
                       <label for="name">Your Email</label>
@@ -677,7 +679,7 @@
                    </div>
                   <div class="form-group">
                     <label for="name">Message</label>
-                    <textarea class="form-control" name="messages" rows="10" type="text" placeholder="Ex: Tell Us About You Want" required></textarea>
+                    <textarea class="form-control" name="msg" rows="10" type="text" placeholder="Ex: Message Us" required></textarea>
                   </div>
               <div class="text-center"><button type="submit" name="submit">Send Message</button></div>
             </form>
