@@ -7,7 +7,7 @@ function emailSend(){
 
 	var messageBody = "Name " + userName +
 	"<br/> Phone " + phone +
-	"<br/> Email " + email;
+	"<br/> Email " + email +
 	"<br/> Msg " + msg;
 	Email.send({
     Host : "smtp.elasticemail.com",
